@@ -1,0 +1,105 @@
+.settings-page {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.settings-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.settings-container h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+.settings-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+.settings-section:last-child {
+  border-bottom: none;
+}
+
+.settings-section h2 {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-group label {
+  color: #333;
+  font-weight: 500;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+  padding: 0.75rem;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.form-group input:hover,
+.form-group select:hover {
+  border-color: #ddd;
+}
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ff385c;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 56, 92, 0.1);
+}
+.form-group.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.form-group.checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #ff385c;
+}
+.settings-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.save-btn {
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.save-btn:hover {
+  background-color: #e31c5f;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 56, 92, 0.2);
+}
+.save-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .settings-page {
+    padding: 1rem;
+  }
+  .settings-container {
+    padding: 1rem;
+  }
+}
