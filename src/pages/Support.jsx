@@ -12,14 +12,14 @@ function Support() {
 
   return (
     <div className="page-container">
-      <div className="page-content">
+      <div className="about-content">
         <h1>Support Center</h1>
         <br></br>
-        <div className="support-sections">
-          <section className="faq-section">
+        <div className="about-content">
+          <section className="about-section">
             <h2>Frequently Asked Questions</h2>
             <br></br>
-            <div className="faq-list">
+            <div className="about-section">
               <div className="faq-item">
                 <h3>How do I cancel my booking?</h3>
                 <br></br>
