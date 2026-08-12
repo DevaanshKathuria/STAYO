@@ -1,11 +1,9 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useUser } from '../context/UserContext';
 
 function BookingDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { user } = useUser();
 
   const booking = {
     id: parseInt(id),

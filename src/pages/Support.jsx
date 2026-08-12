@@ -1,15 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Pages.css';
 
 function Support() {
-  const [ticket, setTicket] = useState({ subject: '', message: '' });
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Support ticket submitted successfully!");
-    setTicket({ subject: '', message: '' });
-  };
-
   return (
     <div className="page-container">
       <div className="about-content">
